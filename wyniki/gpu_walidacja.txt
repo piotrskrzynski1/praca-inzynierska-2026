@@ -1,0 +1,1 @@
+Zapisano ..\wyniki\gra.png. Adapter: AMD Radeon RX 6800 XT (Vulkan). Walidacja wgpu: bez błędów.

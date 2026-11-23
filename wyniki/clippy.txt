@@ -1,0 +1,2 @@
+    Checking rust-ecs-3d v0.1.0 (C:\Users\piotr\Downloads\praca inzynierksa (1)\praca inzynierksa\praca inzynierska\silnik)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.91s

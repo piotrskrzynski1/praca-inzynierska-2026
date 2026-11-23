@@ -1,0 +1,7 @@
+benchmark=position_velocity_integration_variants
+package_version=0.1.0
+os=windows,arch=x86_64,logical_cpus=12
+profile=release,warmup_steps=100,samples=15,steps_per_sample=100,dt=0.016666668
+compiled_target_features=sse4.1:false,avx:false,avx2:false,fma:false
+variants=ecs_soa,soa_vec,soa_flat,vec_aos
+allocation_and_checksum_excluded=true; execution=single_thread; order=rotating; numbers=wall_clock_nanoseconds

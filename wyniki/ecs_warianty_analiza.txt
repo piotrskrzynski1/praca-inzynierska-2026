@@ -1,0 +1,36 @@
+
+[domyslny] ecs_warianty_domyslny.csv: 180 wierszy, 45 serii, sumy kontrolne zgodne
+     1000 encji: ECS 1.151 ns (2.80x AoS)  SoA bez ECS 1.143 ns (2.78x AoS)  SoA jako f32 0.184 ns (0.45x AoS)  Vec AoS 0.411 ns (1.00x AoS)
+    10000 encji: ECS 1.197 ns (1.93x AoS)  SoA bez ECS 1.195 ns (1.93x AoS)  SoA jako f32 0.269 ns (0.43x AoS)  Vec AoS 0.619 ns (1.00x AoS)
+   100000 encji: ECS 1.192 ns (1.56x AoS)  SoA bez ECS 1.191 ns (1.56x AoS)  SoA jako f32 0.532 ns (0.70x AoS)  Vec AoS 0.764 ns (1.00x AoS)
+
+[native] ecs_warianty_native.csv: 180 wierszy, 45 serii, sumy kontrolne zgodne
+     1000 encji: ECS 0.132 ns (0.17x AoS)  SoA bez ECS 0.164 ns (0.21x AoS)  SoA jako f32 0.167 ns (0.21x AoS)  Vec AoS 0.792 ns (1.00x AoS)
+    10000 encji: ECS 0.243 ns (0.30x AoS)  SoA bez ECS 0.235 ns (0.29x AoS)  SoA jako f32 0.237 ns (0.30x AoS)  Vec AoS 0.799 ns (1.00x AoS)
+   100000 encji: ECS 0.511 ns (0.43x AoS)  SoA bez ECS 0.520 ns (0.44x AoS)  SoA jako f32 0.525 ns (0.44x AoS)  Vec AoS 1.186 ns (1.00x AoS)
+
+% Wiersze tabeli LaTeX: kompilacja & encje & wariant & mediana [us] & p95 [us] & ns/encję
+domyslny & 1\,000 & ECS & 1,15 & 1,63 & 1,15 \\
+domyslny & 1\,000 & SoA bez ECS & 1,14 & 1,17 & 1,14 \\
+domyslny & 1\,000 & SoA jako f32 & 0,18 & 0,21 & 0,18 \\
+domyslny & 1\,000 & Vec AoS & 0,41 & 0,47 & 0,41 \\
+domyslny & 10\,000 & ECS & 12,0 & 12,3 & 1,20 \\
+domyslny & 10\,000 & SoA bez ECS & 11,9 & 12,2 & 1,20 \\
+domyslny & 10\,000 & SoA jako f32 & 2,69 & 3,14 & 0,27 \\
+domyslny & 10\,000 & Vec AoS & 6,19 & 7,04 & 0,62 \\
+domyslny & 100\,000 & ECS & 119,2 & 124,7 & 1,19 \\
+domyslny & 100\,000 & SoA bez ECS & 119,1 & 124,4 & 1,19 \\
+domyslny & 100\,000 & SoA jako f32 & 53,2 & 54,4 & 0,53 \\
+domyslny & 100\,000 & Vec AoS & 76,4 & 81,8 & 0,76 \\
+native & 1\,000 & ECS & 0,13 & 0,15 & 0,13 \\
+native & 1\,000 & SoA bez ECS & 0,16 & 0,21 & 0,16 \\
+native & 1\,000 & SoA jako f32 & 0,17 & 0,21 & 0,17 \\
+native & 1\,000 & Vec AoS & 0,79 & 0,80 & 0,79 \\
+native & 10\,000 & ECS & 2,43 & 2,71 & 0,24 \\
+native & 10\,000 & SoA bez ECS & 2,35 & 2,63 & 0,24 \\
+native & 10\,000 & SoA jako f32 & 2,37 & 3,03 & 0,24 \\
+native & 10\,000 & Vec AoS & 7,99 & 10,73 & 0,80 \\
+native & 100\,000 & ECS & 51,1 & 54,7 & 0,51 \\
+native & 100\,000 & SoA bez ECS & 52,0 & 56,5 & 0,52 \\
+native & 100\,000 & SoA jako f32 & 52,5 & 54,9 & 0,53 \\
+native & 100\,000 & Vec AoS & 118,6 & 124,2 & 1,19 \\

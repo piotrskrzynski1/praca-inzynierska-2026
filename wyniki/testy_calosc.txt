@@ -1,0 +1,71 @@
+
+running 15 tests
+test game::tests::projectile_hit_destroys_enemy_once_and_drops_xp ... ok
+test game::tests::automatic_fire_uses_upgraded_volley ... ok
+test game::tests::expired_projectiles_are_removed_and_player_stays_in_arena ... ok
+test game::tests::enemy_waves_grow_and_keep_a_minimum_interval ... ok
+test game::tests::pickups_level_up_and_increase_fire_rate ... ok
+test game::tests::pause_and_invalid_time_do_not_change_simulation ... ok
+test game::tests::diagonal_movement_does_not_increase_speed ... ok
+test game::tests::coincident_and_near_zero_targets_produce_finite_projectiles ... ok
+test game::tests::contact_damage_causes_game_over_and_freezes_simulation ... ok
+test game::tests::simulation_spawns_the_larger_wave_after_one_minute ... ok
+test game::tests::restart_restores_initial_world ... ok
+test game::tests::volley_upgrades_every_three_levels_and_stops_at_five ... ok
+test game::tests::volleys_form_symmetric_cones_with_constant_projectile_speed ... ok
+test game::tests::parallel_and_sequential_simulations_agree ... ok
+test game::tests::enemy_spawn_requests_respect_the_world_limit ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 16 tests
+test bundle_order_does_not_create_another_archetype ... ok
+test component_migration_preserves_handles_and_repairs_swapped_rows ... ok
+test despawn_repairs_last_row_and_reuse_invalidates_old_handle ... ok
+test components_drop_exactly_once_through_migration_replace_remove_and_world_drop ... ok
+test empty_bundle_and_zero_sized_component_can_migrate ... ok
+test missing_component_and_fabricated_handle_do_not_change_world ... ok
+test pool_rejects_zero_workers - should panic ... ok
+test mutable_query_handles_both_column_orders_and_updates_once ... ok
+test duplicate_component_and_query_types_are_rejected ... ok
+test pool_returns_results_and_preserves_map_order ... ok
+test pool_drop_drains_all_accepted_tasks_even_without_result_handles ... ok
+test replace_component_keeps_archetype_and_other_components ... ok
+test spawn_get_and_query_only_matching_archetypes ... ok
+test stopped_pool_reports_error_and_shutdown_is_idempotent ... ok
+test repeated_migration_and_despawn_preserve_every_surviving_entity ... ok
+test task_panic_is_reported_and_worker_continues ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

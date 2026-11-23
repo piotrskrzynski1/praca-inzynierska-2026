@@ -1,0 +1,151 @@
+{
+  "probe": "full_game_step_cpu",
+  "source": "load_probe.csv",
+  "metadata": "load_probe_metadata.txt",
+  "validated_rows": 1800,
+  "warmup_steps": 60,
+  "measured_steps_per_scenario": 300,
+  "p95_method": "linear interpolation at sorted index (n-1)*0.95",
+  "all_simulation_steps_advanced": true,
+  "worker_variants_match_in_all_simulation_columns": true,
+  "timing_scope": "Game::step CPU wall-clock time; input, health reset, counts and CSV excluded",
+  "measurement_conditions": {
+    "controls_invulnerable": true,
+    "health_reset_to_100_before_each_step": true,
+    "contact_damage_spawning_and_kills_active": true,
+    "initial_level": 13,
+    "initial_projectiles_per_volley": 5,
+    "scenario_order": [
+      [
+        100,
+        1
+      ],
+      [
+        100,
+        4
+      ],
+      [
+        1000,
+        1
+      ],
+      [
+        1000,
+        4
+      ],
+      [
+        5000,
+        1
+      ],
+      [
+        5000,
+        4
+      ]
+    ]
+  },
+  "limitations": [
+    "CPU simulation only; rendering and GPU excluded; not full frame time or FPS",
+    "Diagnostic invulnerable fixture; does not measure ordinary survival time",
+    "Single short ordered run, six simulated seconds per scenario including warmup",
+    "Enemy and entity populations vary during each run; before/after counts are recorded",
+    "No alternative architecture measured; not comparative evidence of ECS advantage",
+    "Timing values are affected by the machine and operating-system scheduling"
+  ],
+  "results": [
+    {
+      "initial_enemies": 100,
+      "workers": 1,
+      "samples": 300,
+      "median_ms_per_step": 0.0061,
+      "p95_ms_per_step": 0.0094,
+      "min_ms_per_step": 0.0038,
+      "max_ms_per_step": 0.0163,
+      "actual_enemies_min": 44,
+      "actual_enemies_max": 97,
+      "actual_entities_min": 148,
+      "actual_entities_max": 207,
+      "final_score": 74,
+      "final_level": 13,
+      "final_simulation_seconds": 6.000023
+    },
+    {
+      "initial_enemies": 100,
+      "workers": 4,
+      "samples": 300,
+      "median_ms_per_step": 0.0063,
+      "p95_ms_per_step": 0.0093,
+      "min_ms_per_step": 0.0041,
+      "max_ms_per_step": 0.015,
+      "actual_enemies_min": 44,
+      "actual_enemies_max": 97,
+      "actual_entities_min": 148,
+      "actual_entities_max": 207,
+      "final_score": 74,
+      "final_level": 13,
+      "final_simulation_seconds": 6.000023
+    },
+    {
+      "initial_enemies": 1000,
+      "workers": 1,
+      "samples": 300,
+      "median_ms_per_step": 0.0236,
+      "p95_ms_per_step": 0.03457000000000002,
+      "min_ms_per_step": 0.0111,
+      "max_ms_per_step": 0.1334,
+      "actual_enemies_min": 772,
+      "actual_enemies_max": 988,
+      "actual_entities_min": 966,
+      "actual_entities_max": 1043,
+      "final_score": 245,
+      "final_level": 13,
+      "final_simulation_seconds": 6.000023
+    },
+    {
+      "initial_enemies": 1000,
+      "workers": 4,
+      "samples": 300,
+      "median_ms_per_step": 0.0402,
+      "p95_ms_per_step": 0.061615,
+      "min_ms_per_step": 0.0246,
+      "max_ms_per_step": 0.2009,
+      "actual_enemies_min": 772,
+      "actual_enemies_max": 988,
+      "actual_entities_min": 966,
+      "actual_entities_max": 1043,
+      "final_score": 245,
+      "final_level": 13,
+      "final_simulation_seconds": 6.000023
+    },
+    {
+      "initial_enemies": 5000,
+      "workers": 1,
+      "samples": 300,
+      "median_ms_per_step": 0.08174999999999999,
+      "p95_ms_per_step": 0.13867500000000002,
+      "min_ms_per_step": 0.0376,
+      "max_ms_per_step": 0.2321,
+      "actual_enemies_min": 4728,
+      "actual_enemies_max": 4985,
+      "actual_entities_min": 4930,
+      "actual_entities_max": 5039,
+      "final_score": 290,
+      "final_level": 14,
+      "final_simulation_seconds": 6.000023
+    },
+    {
+      "initial_enemies": 5000,
+      "workers": 4,
+      "samples": 300,
+      "median_ms_per_step": 0.1053,
+      "p95_ms_per_step": 0.18175000000000005,
+      "min_ms_per_step": 0.055,
+      "max_ms_per_step": 0.5236,
+      "actual_enemies_min": 4728,
+      "actual_enemies_max": 4985,
+      "actual_entities_min": 4930,
+      "actual_entities_max": 5039,
+      "final_score": 290,
+      "final_level": 14,
+      "final_simulation_seconds": 6.000023
+    }
+  ]
+}

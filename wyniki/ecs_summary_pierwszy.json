@@ -1,0 +1,75 @@
+{
+  "benchmark": "position_velocity_integration",
+  "source": "ecs_benchmark.csv",
+  "metadata": "ecs_benchmark_metadata.txt",
+  "environment": "srodowisko.json",
+  "validated_rows": 90,
+  "checksums_equal_in_all_45_pairs": true,
+  "alternating_execution_order_validated": true,
+  "warmup_steps": 100,
+  "iterations_per_sample": 100,
+  "p95_method": "linear interpolation at sorted index (n-1)*0.95",
+  "timing_scope": "single-thread CPU integration; allocation and checksum excluded",
+  "results": [
+    {
+      "entities": 1000,
+      "implementation": "ecs_soa",
+      "samples": 15,
+      "median_ns_per_iteration": 1177.0,
+      "p95_ns_per_iteration": 1371.0999999999997,
+      "min_ns_per_iteration": 1133.0,
+      "max_ns_per_iteration": 1593.0,
+      "median_ns_per_entity": 1.177
+    },
+    {
+      "entities": 1000,
+      "implementation": "vec_aos",
+      "samples": 15,
+      "median_ns_per_iteration": 680.0,
+      "p95_ns_per_iteration": 732.7,
+      "min_ns_per_iteration": 655.0,
+      "max_ns_per_iteration": 739.0,
+      "median_ns_per_entity": 0.68
+    },
+    {
+      "entities": 10000,
+      "implementation": "ecs_soa",
+      "samples": 15,
+      "median_ns_per_iteration": 13533.0,
+      "p95_ns_per_iteration": 84661.59999999996,
+      "min_ns_per_iteration": 10759.0,
+      "max_ns_per_iteration": 112229.0,
+      "median_ns_per_entity": 1.3533
+    },
+    {
+      "entities": 10000,
+      "implementation": "vec_aos",
+      "samples": 15,
+      "median_ns_per_iteration": 7052.0,
+      "p95_ns_per_iteration": 11022.8,
+      "min_ns_per_iteration": 5505.0,
+      "max_ns_per_iteration": 11713.0,
+      "median_ns_per_entity": 0.7052
+    },
+    {
+      "entities": 100000,
+      "implementation": "ecs_soa",
+      "samples": 15,
+      "median_ns_per_iteration": 124897.0,
+      "p95_ns_per_iteration": 253749.8,
+      "min_ns_per_iteration": 110038.0,
+      "max_ns_per_iteration": 263225.0,
+      "median_ns_per_entity": 1.24897
+    },
+    {
+      "entities": 100000,
+      "implementation": "vec_aos",
+      "samples": 15,
+      "median_ns_per_iteration": 80133.0,
+      "p95_ns_per_iteration": 154997.3,
+      "min_ns_per_iteration": 64971.0,
+      "max_ns_per_iteration": 162236.0,
+      "median_ns_per_entity": 0.80133
+    }
+  ]
+}

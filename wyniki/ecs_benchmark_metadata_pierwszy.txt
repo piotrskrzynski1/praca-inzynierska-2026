@@ -1,0 +1,9 @@
+   Compiling glam v0.27.0
+   Compiling rust-ecs-3d v0.1.0 (C:\Users\piotr\OneDrive\Pulpit\praca inzynierksa\praca inzynierska\silnik)
+    Finished `release` profile [optimized] target(s) in 8.08s
+     Running `target\release\benchmark.exe`
+benchmark=position_velocity_integration
+package_version=0.1.0
+os=windows,arch=x86_64,logical_cpus=12
+profile=release,warmup_steps=100,samples=15,steps_per_sample=100,dt=0.016666668
+allocation_and_checksum_excluded=true; execution=single_thread; order=alternating; numbers=wall_clock_nanoseconds

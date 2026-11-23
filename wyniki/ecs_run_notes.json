@@ -1,0 +1,13 @@
+{
+  "selected_run": "ecs_benchmark.csv",
+  "selected_summary": "ecs_summary.json",
+  "selected_run_context": "Pomiar końcowy rozpoczęto po zakończeniu kompilacji modułu graficznego, testów, uruchomienia kontrolnego okna i walidacji offscreen. W trakcie pomiaru nie wykonywano kompilacji ani innych obciążających procesor narzędzi. Nie kontrolowano aktywności usług systemowych i innych aplikacji użytkownika.",
+  "excluded_run": "ecs_benchmark_pierwszy.csv",
+  "excluded_metadata": "ecs_benchmark_metadata_pierwszy.txt",
+  "excluded_summary": "ecs_summary_pierwszy.json",
+  "exclusion_reason": "Pierwszy przebieg nakładał się na równoległą kompilację modułu graficznego. Stwierdzono zakłócenie warunków pomiaru, dlatego zachowano przebieg w archiwum i nie użyto go do tabeli wyników końcowych.",
+  "benchmark_command": "cargo run --offline --locked --release --no-default-features --bin benchmark",
+  "analysis_command": "python ../wyniki/analizuj_ecs.py",
+  "validation": "90 wierszy, 15 próbek na wariant i rozmiar zbioru, 45 zgodnych par sum kontrolnych, naprzemienna kolejność wariantów, sprawdzona zgodność przeliczeń jednostek czasu.",
+  "timing_scope": "Jednowątkowa integracja położenia na CPU, jeden archetyp, bez czasu alokacji i obliczania sum kontrolnych. Pomiar nie obejmuje pełnej klatki, kolizji ani czasu GPU."
+}

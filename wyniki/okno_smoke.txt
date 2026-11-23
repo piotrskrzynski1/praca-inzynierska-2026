@@ -1,0 +1,1 @@
+GPU: AMD Radeon RX 6800 XT (Vulkan)
